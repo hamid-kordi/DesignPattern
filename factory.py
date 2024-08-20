@@ -44,7 +44,7 @@ class Pdf:  # creator
 
 
 def client(file,format):
-    formats = {'pdf' : PdfMake,'xml' : Xml}
+    formats = {'pdf' : PdfMake,'xml' : XmlMake}
     result = formats[format](file)
     return result.call_edit()
 
