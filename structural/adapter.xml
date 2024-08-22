@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <title>Introduction to Python</title>
+        <author>John Doe</author>
+        <year>2021</year>
+        <price currency="USD">29.99</price>
+    </book>
+    <book>
+        <title>Learning XML</title>
+        <author>Jane Smith</author>
+        <year>2019</year>
+        <price currency="USD">39.99</price>
+    </book>
+</library>
