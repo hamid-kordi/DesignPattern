@@ -37,7 +37,7 @@ class LogProxy(AbstractServer):
         self._server.recieve()
 
     def logging(self):
-        with open('log.log','a') as log:
+        with open('logproxy.log','a') as log:
             log.write(f'Request {datetime.datetime.now()} \n')
 
 
