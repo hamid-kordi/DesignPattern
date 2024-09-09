@@ -1,4 +1,5 @@
 """
+
 chain of reponsibility
 - a behavioral design pattern that lets you pass 
 requests along a chain of handlers.
@@ -9,6 +10,7 @@ or to pass it to the next handler in the chain.
 """
 
 from abc import ABC , abstractmethod
+
 
 class AbstractHandler(ABC):
     @abstractmethod
