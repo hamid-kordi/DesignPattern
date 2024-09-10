@@ -29,8 +29,8 @@ class ComplexCommand(Command):
 
     def execute(self):
         print(f'ComplexCommand: Complex stuff should be done a receiver', end='')
-        self._receiver.do_something(self._a)
-        self._receivfr.do_something_else(self._b) 
+        self._reciever.do_somthing(self._a)
+        self._reciever.do_somthing_else(self._b) 
 
 class Reciever:
     def do_somthing(self,a):
