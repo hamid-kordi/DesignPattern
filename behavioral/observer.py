@@ -39,7 +39,7 @@ class ConcretePublisher(Publisher):
         print("notify all . . . ")
 
         for observer in self._observer:
-            observer.update()
+            observer.update(self )
 
     def operation(self):
         self._state = randrange(0,10)
