@@ -16,10 +16,10 @@ class Top(abc.ABC):
         self.fourth_requier()
 
     def first_common(self):
-        print('first common')
+        print("first common")
 
     def second_common(self):
-        print('second common')
+        print("second common")
 
     @abc.abstractmethod
     def third_requier(self):
@@ -32,24 +32,22 @@ class Top(abc.ABC):
 
 class One(Top):
     def third_requier(self):
-         print(" third one ")
-    
+        print(" third one ")
+
     def fourth_requier(self):
         print("fourth one ")
-    
 
 
 class Two(Top):
     def third_requier(self):
         print("third two")
-    
+
     def fourth_requier(self):
         print("fourth two ")
-    
+
 
 def client(kls):
     kls.template()
 
 
 client(Two())
-
