@@ -46,21 +46,20 @@ These patterns focus on object creation mechanisms, making your code more flexib
 **Python Example:**
 
 ```python
-class Singleton:
+# Impliment
+class Singleton(type):
     _instance = None
 
-    def __new__(cls):
-        if cls._instance is None:
-            cls._instance = super(Singleton, cls).__new__(cls)
-            # Initialization code here
-            cls._instance.value = "Singleton Instance"
+    def __call__(self,*args,**kwargs):
+        if self._instance is None:
+            self._instance = super().__call__(cls)
         return cls._instance
 
 # Usage
 s1 = Singleton()
 s2 = Singleton()
-print(s1.value)  # Output: Singleton Instance
-print(s1 is s2)  # Output: True
+print(s1.value) 
+print(s1 is s2)  
 ```
 
 ### Factory Method
